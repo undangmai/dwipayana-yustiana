@@ -18,17 +18,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
-
-    <audio id="audioplayer" src="assets/bg-sound.mp3" autoplay loop> </audio>
 </head>
 <body>
-    <div id="modal">
+    <audio id="myAudio">
+        <source src="assets/bg-sound.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="sticky-button">
+        <button onclick="Play()" type="button"><img src="assets/play-and-pause-button.svg" alt=""></button>
+    </div>
+    <!-- <div id="modal">
         <div class="modalconent">
             <button id="closeModal">x</button>
             <br>
             <img src="assets/protokol.png" alt="">
         </div>
-    </div>
+    </div> -->
     <section class="mempelai">
         <div class="header">
             <div data-aos="fade-down" data-aos-duration="1500" class="content">
@@ -63,7 +68,7 @@
         </svg>
 
         <div data-aos="zoom-in" data-aos-duration="2000" class="content">
-            <h2>Senin, 2 April 2021</h2>
+            <h2>Senin, 5 April 2021</h2>
             <p>Jl. Selat, Celuk, Sukawati, Gianyar</p>
         </div>
 
@@ -103,11 +108,35 @@
                 </h4>
                 <br>
                 <p>
-                    Merupakan suatu kehormatan dan kebanggaan bagi kami sekeluarga apabila Bapak / Ibu / Saudara / i berkenan hadir dan memberikan doa restu kepada putra putri kami. <br>
+                    Merupakan suatu kehormatan dan kebanggaan bagi kami sekeluarga apabila Bapak / Ibu / Saudara / i berkenan hadir dan memberikan doa restu pada : <br>
                 </p>
                 <br>
                 <h3>Om Shanti Shanti Shanti Om</h3>
                 <img class="line-divider-bot" src="assets/line-divider.png" alt="-">
+            </div>
+        </div>
+
+        <div class="protokol">
+            <div class="content">
+                <h1>!</h1>
+                <h3>Protokol Kesehatan</h3>
+                <p>Tanpa mengurangi rasa hormat kami harap para tamu undangan untuk tetap mentaati protokol kesehatan</p>
+                <div class="wrapper">
+                    <div class="box">
+                        <img src="assets/masker.svg" alt="">
+                        <p>Menggunakan Masker</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/cuci-tangan.svg" alt="">
+                        <p>Mencuci Tangan</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="assets/jaga-jarak.svg" alt="">
+                        <p>Jaga Jarak</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -199,12 +228,25 @@
         }
     </script> -->
 
-    <script>
+    <!-- <script>
         window.onload = function () {
             document.getElementById('closeModal').onclick = function () {
                 document.getElementById('modal').style.display = "none"
             };
         };
+    </script> -->
+
+    <script>
+        function Play()
+            {
+                var myAudio = document.getElementById("myAudio");
+                if(myAudio.paused) {
+                    myAudio.play();
+                }
+                else {
+                myAudio.pause();
+                }
+            }
     </script>
 </body>
 </html>
