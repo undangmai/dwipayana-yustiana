@@ -120,8 +120,8 @@ button{
 .cover button{
     padding: 10px 15px;
     background-color: var(--white);
-    border: 1px solid var(--dark);
-    color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--dark);
     border-radius: 20px;
     transition: 0.3s;
 }
