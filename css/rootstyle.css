@@ -167,3 +167,28 @@ button{
     background-color: transparent;
     border: 1px solid var(--black);
 }
+
+.sticky-button{
+    position: fixed;
+    left: 0;
+    bottom: 40px;
+    z-index: 1000;
+}
+
+
+.sticky-button button{
+    background-color: #ff2d50;
+    border: none;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sticky-button button:active{
+    border: none;
+}
+
+.sticky-button img{
+    width: 30px;
+
+}
