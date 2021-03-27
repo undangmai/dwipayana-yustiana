@@ -218,7 +218,7 @@
 
 }
 
-.protokol .content h3,h1{
+.protokol .content h3, .protokol .content h1{
     font-family: var(--poppins);
     font-weight: bold;
 }
