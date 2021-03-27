@@ -1,0 +1,44 @@
+.hitung-mundur{
+    width: 80%;
+    margin:50px auto 0;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(114, 114, 114, 0.37);
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    color: var(--dark);
+
+    font-family: var(--poppins);
+}
+
+.hitung-mundur h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wrapper{
+    padding: 0 0 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.days,.hours,.mins,.seconds{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bigtxt{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+@media screen and (max-width:600px){
+    .hitung-mundur{
+        width: 90%;
+    }
+}
