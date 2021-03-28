@@ -179,9 +179,8 @@ button{
 .sticky-button button{
     background-color: #ff2d50;
     border: none;
-    padding: 10px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding: 20px;
+    border-radius:100px;
 }
 
 .sticky-button button:active{
